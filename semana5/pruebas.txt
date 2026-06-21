@@ -1,0 +1,9 @@
+al escribir http://localhost:3000 (Ruta raíz, o base)
+Se observa en pantalla el mensaje "servidor activo" lo que demuestra que el servidor está encendido y funcionando correctamente
+
+Al escribir http://localhost:3000/saludo (Ruta estática)
+Se observa en pantalla el mensaje "Hola comunidad", lo que evidencia como express maneja múltiples rutas estáticas e independientes
+
+Y al escribir http://localhost:3000/mensaje/juan (Ruta Dinámica con Parámetros)
+Se observa en pantalla el mensaje "Hola juan". Si se cambia el nombre en la URL por cualquier otro (por ejemplo, /mensaje/carlos), 
+el servidor responderá dinámicamente modificando el saludo y se observará en pantalla "Hola carlos" o el nombre que se ponga.
