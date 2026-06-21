@@ -1,0 +1,12 @@
+1. ¿Qué hace esta ruta?
+Esta ruta escucha peticiones HTTP de tipo POST en el endpoint '/reporte'. A diferencia de los métodos GET (que solo sirven para leer o solicitar información),
+el método POST está diseñado para recibir datos enviados por el cliente hacia el servidor. 
+El código extrae la información que viaja en el cuerpo de la solicitud mediante 'req.body.mensaje' (aprovechando el middleware express.json()) 
+y responde enviando un objeto en formato JSON que confirma la recepción del dato con el estado "Reporte recibido" junto al mensaje original.
+
+2. ¿Para qué podría servir en una aplicación comunitaria?
+En el contexto de una plataforma comunitaria, esta ruta representa la herramienta de participación activa de los usuarios, 
+ya que les permite enviar información al sistema en lugar de solo leerla. Podría servir específicamente para:
+- Reportar incidencias en tiempo real dentro del territorio, como daños en la infraestructura pública (luminarias rotas, baches) o cortes de servicios.
+- Enviar alertas comunitarias inmediatas de seguridad o emergencias climáticas.
+- Registrar propuestas ciudadanas, solicitudes formales o inscripciones a eventos y talleres locales organizados por la colectividad.
